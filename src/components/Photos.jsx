@@ -3,7 +3,6 @@ import './Photos.css';
 
 function Photos() {
     var [product, setProduct] =useState([""])
-    // var [range, setRange] = useState(1)
     var [temp, setTemp] = useState("")
     var [num, setNum] = useState(1)
 
@@ -20,11 +19,6 @@ function Photos() {
         .then(data=>setProduct(data))
         },[])
     
-    // const handleChange=(e)=>{
-    //     console.log(e.target.value)
-    //     setRange(e.target.value)
-    //     console.log(range)
-    // }
   return (
     <div>
         <div><input type="range" min="0" max="5000"  className="slider" name="points" onChange={(e)=>{asd(e)}} id="myRange" /></div>
